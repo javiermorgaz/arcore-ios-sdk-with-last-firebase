@@ -38,7 +38,7 @@ let package = Package(
       checksum: "e0035c9b708b32d5996053ac9a3d7a2c29aa205011f63327b71cf5466218dcf8"
     ),
     .target(
-      name: "Base",
+      name: "BaseARCore",
       dependencies: [
         "ARCoreBase",
         .product(name: "nanopb", package: "nanopb"),
@@ -87,7 +87,7 @@ let package = Package(
       name: "GARSession",
       dependencies: [
         "ARCoreGARSession",
-        "Base",
+        "BaseARCore",
         .product(name: "nanopb", package: "nanopb"),
         .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
       ],
@@ -105,7 +105,7 @@ let package = Package(
       name: "AugmentedFaces",
       dependencies: [
         "ARCoreAugmentedFaces",
-        "Base",
+        "BaseARCore",
         "TFShared",
         .product(name: "nanopb", package: "nanopb"),
       ],
@@ -138,7 +138,7 @@ let package = Package(
       name: "TFShared",
       dependencies: [
         "ARCoreTFShared",
-        "Base",
+        "BaseARCore",
       ],
       path: "TFShared",
       sources: ["dummy.m"],
